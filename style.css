@@ -1,0 +1,338 @@
+body{
+	background-color:#FFFFFF;
+	font-family: Arial, Verdana, sans-serif;
+    font-size: 1em;
+}
+.tdname:hover{
+	background-color:#CCCCCC;
+}
+.lzag{
+	font-size: 1em;
+	color:#999999;
+}
+.ltext{
+	font-size: 1em;
+    padding:0 0 0;
+}
+.ud{
+	font-size:0.6em;
+	color:#666666;
+	border-bottom: 1px dotted;
+	cursor:pointer;
+}
+v{
+	font-size: 1.3em;
+}
+e{
+	font-size: 1.3em;
+}
+zn{
+	font-size: 0.8em;
+}
+
+input{
+	font-size: 1em;
+	font-family: Arial, Verdana, sans-serif;
+
+}
+textarea{
+	font-size: 1em;
+	font-family: Arial, Verdana, sans-serif;
+
+}
+input[type=submit]{
+	padding: .5em 2em;
+}
+select{
+	font-size: 1em;
+	font-family: Arial, Verdana, sans-serif;
+
+}
+label{
+	font-size: 0.8em;
+	font-family: Arial, Verdana, sans-serif;
+    color:#666666;
+} 
+legend{
+	font-size: 0.8em;
+	font-family: Arial, Verdana, sans-serif;
+    color:#666666;
+} 
+h1{
+	font-size: 2em;
+    text-align:center;
+}
+or{
+	background-color:#FF9933;
+}
+a {
+  text-decoration: none;
+  
+}
+a:hover {
+  text-decoration: underline;
+  cursor:pointer;
+}
+.find a{
+	font-size: 1.2em;
+}
+div.top_menu {
+	font-size: 1em;
+	top:0px;
+	left:0px;
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  background-color: #EEEEEE;
+  border-bottom: 1px solid #999999;
+  margin-top: 0px;
+  padding-top: 0px;
+  z-index: 100;
+}
+.top_menu a{
+	color: #000000;
+  text-decoration: none; 
+}
+.top_menu a:hover {
+  color: #999999;
+}
+div.top_menu div {
+  float: left;
+  margin: 0px 20px 0px 10px;
+  padding: 15px 0px 0px 0px;
+  height: 50px;
+}
+.top_menu img{
+	height:25px;
+}
+ul.podmenu {
+  position: absolute;
+  background-color: #EEEEEE;
+  border-left: 1px solid #999999;
+  border-right: 1px solid #999999;
+  border-bottom: 1px solid #999999;
+  margin: 15px 0px 0px 0px;
+  list-style-type:none;
+}
+ul.podmenu li:hover { background-color: #EEEEEE; }
+ul.podmenu li { margin: 25px 75px 25px 0px; }
+
+
+.pseudoa{
+  color: #0000FF;
+  border-bottom: 1px dotted;
+}
+.pseudoa:hover {
+  color: #FF0000;
+  text-decoration: none;
+  cursor:pointer;
+}
+#loadizm{
+	padding:3px;
+	width:600px;
+	background-color:#FFFFFF;
+	top:100px;
+	left:100px;
+	position:fixed;
+	cursor:move;
+	display:none;
+	z-index:102;
+	text-align:center;
+}
+.izmform{
+	width:600px;
+	background-color:#FFFFFF;
+	top:100px;
+	left:100px;
+	position:fixed;
+	cursor:move;
+	display:none;
+	padding:3px;
+	z-index:102;
+}
+.ist{
+	 width: 80%; 
+	 max-width: 700px; 
+	 margin: 1em auto; 
+	 padding: 1em; 
+	 box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+}
+.card{
+	 width: 80%; 
+	 max-width: 700px; 
+	 margin: 1em auto; 
+	 padding: 1em; 
+	 box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+	 margin-bottom:10px;
+}
+.fts {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 17px;
+  height: 17px;
+}
+/* Это для всех браузеров, кроме совсем старых, которые не поддерживают
+селекторы с плюсом. Показываем, что label кликабелен. */
+input +label {
+  cursor: pointer;
+}
+
+/* Далее идет оформление чекбокса в современных браузерах, а также IE9 и выше.
+Благодаря тому, что старые браузеры не поддерживают селекторы :not и :checked,
+в них все нижеследующие стили не сработают. */
+
+/* Прячем оригинальный чекбокс. */
+.fts:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.fts:not(checked) + label {
+  position: relative; /* будем позиционировать псевдочекбокс относительно label */
+  padding: 0 0 0 60px; /* оставляем слева от label место под псевдочекбокс */
+}
+/* Оформление первой части чекбокса в выключенном состоянии (фон). */
+.fts:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 50px;
+  height: 26px;
+  border-radius: 13px;
+  background: #CDD1DA;
+  box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+}
+/* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
+.fts:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 2px;
+  width: 22px;
+  height: 22px;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0 2px 5px rgba(0,0,0,.3);
+  transition: all .2s; /* анимация, чтобы чекбокс переключался плавно */
+}
+/* Меняем фон чекбокса, когда он включен. */
+.fts:checked + label:before {
+  background: #9FD468;
+}
+/* Сдвигаем переключатель чекбокса, когда он включен. */
+.fts:checked + label:after {
+  left: 26px;
+}
+/* Показываем получение фокуса. */
+.fts:focus + label:before {
+  box-shadow: 0 0 0 3px rgba(255,255,0,.5);
+}
+.buttons {
+	font-size: 1.2em;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: .5em 2em;
+  outline: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-color: #FDBE33 #000 #D77206;
+  border-radius: 6px;
+  background: linear-gradient(#F3AE0F, #E38916) #E38916;
+  transition: 0.2s;
+} 
+.buttons:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
+.buttons:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
+
+.button15:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.button15:not(checked) + label {
+  position: relative; /* будем позиционировать псевдочекбокс относительно label */
+  padding: 0 0 0 60px; /* оставляем слева от label место под псевдочекбокс */
+}
+.button15:not(checked) + label {
+  display: inline-block;
+  font-size: 1em;
+  color:#CCCCCC;
+  text-decoration: none;
+  padding: .2em 1.2em;
+  outline: none;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 2px;
+  background: rgb(245,245,245) linear-gradient(#f4f4f4, #f1f1f1);
+  transition: all .218s ease 0s;
+  box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+.button15:checked + label {
+  color: #336600;
+  border: 1px solid rgb(198,198,198);
+  background: #f7f7f7 linear-gradient(#f7f7f7, #f1f1f1);
+  box-shadow: 0 0 0;
+}
+
+.find .ista{
+	color: 	#336600;
+	font-size: 12px;
+	margin-right:10px;
+}
+.ista:hover{
+	text-decoration:none;
+}
+
+.btnud {
+  margin-right:5px;
+  display: inline-block;
+  font-family: arial,sans-serif;
+  font-size: 1em;
+  color: rgb(68,68,68);
+  text-decoration: none;
+  padding: .5em 2em;
+  outline: none;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 2px;
+  background: rgb(245,245,245) linear-gradient(#f4f4f4, #f1f1f1);
+  transition: all .218s ease 0s;
+}
+.btnud:hover {
+  color: rgb(24,24,24);
+  border: 1px solid rgb(198,198,198);
+  background: #f7f7f7 linear-gradient(#f7f7f7, #f1f1f1);
+  box-shadow: 0 1px 2px rgba(0,0,0,.1);
+  text-decoration: none;
+}
+.btnud:active {
+  color: rgb(51,51,51);
+  border: 1px solid rgb(204,204,204);
+  background: rgb(238,238,238) linear-gradient(rgb(238,238,238), rgb(224,224,224));
+  box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
+}
+.ntd{
+	
+}
+.otd{
+	
+}
+.ntr:hover{
+	background-color:#EEEEEE;
+}
+.izte{
+	font-size:0.6em;
+	color:#666666;
+	border-bottom: 1px dotted;
+	cursor:pointer;
+}
+.izte:hover{
+	text-decoration:none;
+}
+table.xlstbl{
+	border-collapse:collapse;
+}
+table.xlstbl  tr{
+	padding: 3px;
+	border-bottom:1px solid #999999;
+}
+table.xlstbl  tr:hover{
+	background-color:#EEEEEE;
+}
