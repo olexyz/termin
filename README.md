@@ -1,0 +1,2 @@
+# termin
+Custom dictionary service.
